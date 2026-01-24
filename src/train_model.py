@@ -3,6 +3,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import StandardScaler
 import joblib
+import os
+
+os.makedirs("models", exist_ok=True)
+
 
 # Load data
 df = pd.read_csv("data/master_chemical_data.csv").dropna()

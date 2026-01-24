@@ -1,5 +1,9 @@
 import streamlit as st, pandas as pd, joblib, numpy as np, matplotlib.pyplot as plt
 from fpdf import FPDF
+import os
+
+os.makedirs("data", exist_ok=True)
+os.makedirs("models", exist_ok=True)
 
 # Load model & scaler
 try:

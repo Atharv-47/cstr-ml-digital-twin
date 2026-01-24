@@ -1,5 +1,12 @@
 import numpy as np
 import pandas as pd
+import os
+
+os.makedirs("data", exist_ok=True)
+os.makedirs("models", exist_ok=True)
+
+# rest of generate.py
+
 
 # Constants
 R = 8.314
