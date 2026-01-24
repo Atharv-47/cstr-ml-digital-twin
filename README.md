@@ -5,7 +5,8 @@ It predicts **conversion (%)** and **heat duty (kW)** for selected chemicals und
 
 
 ## Reactions Modeled
-| Chemical | Reaction 
+| Chemical | Reaction|
+|----------|---------------|
 | Ethanol  | Catalytic Dehydration: C2H5OH → C2H4 + H2O |
 | Benzene  | Nitration: C6H6 + HNO3 → C6H5NO2 + H2O |
 
