@@ -9,8 +9,13 @@ os.makedirs("models", exist_ok=True)
 try:
     model = joblib.load("data/reactor_model.pkl")
     scaler = joblib.load("data/scaler.pkl")
-except:
-    st.error("🚨 Missing model files. Run train_model.py first.")
+
+except FileNotFoundError:
+    st.error("🚨 Model files are missing. Please run train_model.py first.")
+    st.stop()
+
+except Exception as e:
+    st.error("🚨 Model files could not be loaded. They may be corrupted or incompatible.")
     st.stop()
 
 st.set_page_config(page_title="Industrial CSTR Digital Twin", layout="wide")
