@@ -59,9 +59,6 @@ It predicts **conversion (%)** and **heat duty (kW)** for selected chemicals und
 
 
 ##  Notes
-
-- Generated datasets and trained models are **excluded from GitHub**  
-- Directories (`data/` and `models/`) are created automatically at runtime  
 - Ensure **Python ≥3.8** and required packages are installed
   
 
