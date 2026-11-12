@@ -54,6 +54,12 @@ for i, target in enumerate(Y.columns):
     print(f"MAE  = {mae:.6f}")
     print(f"RMSE = {rmse:.6f}")
     print(f"R²   = {r2:.6f}")
+    print(f"Actual Mean: {actual.mean():.2f}")
+    print(f"Actual Min: {actual.min():.2f}")
+    print(f"Actual Max: {actual.max():.2f}")
+
+    print(f"MAE as % of target range: "
+        f"{(mae / (actual.max() - actual.min())) * 100:.2f}%")
 
 # Save model and scaler
 joblib.dump(model, "data/reactor_model.pkl")
